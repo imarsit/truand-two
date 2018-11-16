@@ -16,28 +16,28 @@ module.exports = {
 		{
 			name: '关于我们',
 			// 路径
-			path: 'about',
+			path: '/about',
 			// 预览图
 			thumbnail: 'about.png',
 		},
 		{
 			name: '服务',
 			// 路径
-			path: 'services',
+			path: '/services',
 			// 预览图
 			thumbnail: 'services.png',
 		},
 		{
 			name: '模板',
 			// 路径
-			path: 'typography',
+			path: '/typography',
 			// 预览图
 			thumbnail: 'typography.png',
 		},
 		{
 			name: '地址',
 			// 路径
-			path: 'contact',
+			path: '/contact',
 			// 预览图
 			thumbnail: 'contact.png',
 		}
