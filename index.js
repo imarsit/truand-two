@@ -1,6 +1,6 @@
 module.exports = {
 	// 模版标识
-	name: 'example',
+	name: 'truand-two',
 	// 模版引擎
 	engine: 'pug',
 
