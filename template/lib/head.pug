@@ -1,0 +1,73 @@
+
+.header-top
+
+    .container
+        .header-top-left
+            .signin
+                a.play-icon.popup-with-zoom-anim(href='#small-dialog2') 注册
+                #small-dialog2.mfp-hide
+                    h3 新建账号
+                    .signup
+                        form
+                            input.email(type='text', placeholder='Mobile Number', maxlength='10', pattern='[1-9]{1}\d{9}', title='Enter a valid mobile number')
+                        .continue-button
+                            a.hvr-shutter-out-horizontal.play-icon.popup-with-zoom-anim(href='#small-dialog3') 下一步
+                        .button-bottom
+                            p
+                                | 已有账号
+                                a.play-icon.popup-with-zoom-anim(href='#small-dialog') 登陆
+                    .clearfix  
+                #small-dialog3.mfp-hide
+                    h3 新建账号
+                    .signup
+                        form
+                            input.email(type='text', placeholder='Email', required='required', pattern='([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?', title='Enter a valid email')
+                            input(type='password', placeholder='Password', required='required', pattern='.{6,}', title='Minimum 6 characters required', autocomplete='off')
+                            input.email(type='text', placeholder='Re Enter Mobile Number', maxlength='10', pattern='[1-9]{1}\d{9}', title='Enter a valid mobile number')
+                            input(type='submit', value='注册')
+                    .clearfix  
+                #small-dialog4.mfp-hide
+                    h3 Feedback
+                    .feedback-grids
+                        .feedback-grid
+                            p
+                                | Suspendisse tristique magna ut urna pellentesque, ut egestas velit faucibus. Nullam mattis lectus ullamcorper dui dignissim, sit amet egestas orci ullamcorper.
+                        .button-bottom
+                            p
+                                a.play-icon.popup-with-zoom-anim(href='#small-dialog') 登陆
+                                |  to get started.
+
+            .signin
+                a.play-icon.popup-with-zoom-anim(href='#small-dialog') 登陆
+                #small-dialog.mfp-hide
+                    h3 登陆
+                    .signup
+                        form
+                            input.email(type='text', placeholder='Enter email / mobile', required='required', pattern='([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?')
+                            input(type='password', placeholder='Password', required='required', pattern='.{6,}', title='Minimum 6 characters required', autocomplete='off')
+                            input(type='submit', value='登陆')
+                        .forgot
+                            a(href='#') 忘记密码
+                        .button-bottom
+                            p
+                                | 新用户 
+                                a.play-icon.popup-with-zoom-anim(href='#small-dialog2') 注册
+                    .clearfix  
+            .clearfix  
+        .clearfix  
+
+block script
+    script.
+        $(document).ready(function() {
+            $('.popup-with-zoom-anim').magnificPopup({
+                type: 'inline',
+                fixedContentPos: false,
+                fixedBgPos: true,
+                overflowY: 'auto',
+                closeBtnInside: true,
+                preloader: false,
+                midClick: true,
+                removalDelay: 300,
+                mainClass: 'my-mfp-zoom-in'
+                });
+        });

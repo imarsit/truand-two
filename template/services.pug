@@ -1,0 +1,93 @@
+extends layout
+
+block vars
+    - let title = 'services'
+
+block content
+    include lib/head
+    include lib/banner
+    .services
+        .services-top
+            .container
+                .services-info
+                    h3 Services
+                .services-grids
+                    .services-grids-info
+                        h5 放心的服务，领先的服务标准，独创的保障体系
+                        p
+                            |【原创线路-杜绝抄袭】携程网原创产品、全程指定优势资源，拒绝擦边球，线路可以模仿，质量不可复制！
+                            |【全国百强-品牌保障】我社蝉联3届全国百强旅行社，认证品牌大社，年接待量高达30W人次，更放心的选择！
+                            |【高质酒店-不玩猫腻】全程携程4钻标准酒店，不玩满房，换住猫腻，确保1晚入住鼓浪屿豪质地标酒店，给您想要的放心！
+                            |【优质服务-明星导游】优选我社明星导游带团，全年0投诉率，好评率高达99%，微笑贴心，全程管家式接待服务！
+                            |【精华景点-毫无遗憾】岛内必游，精华体验，全部涵盖！鼓浪屿特赠菽庄花园/钢琴博物馆，旅行就要不留遗憾，铭刻美好！
+                    .services-bottom-grids
+                        .col-md-4.services-grid
+                            .services-icon
+                                span.glyphicon.glyphicon-cog(aria-hidden='true')
+                            .services-grid-info
+                                h6 酒店
+                                p
+                                    | 200多个国家121万家酒店，确认订单后不涨价，有房保障，如遇无房全力协调，最高赔付首晚房费，122,000,000条真实点评，APP/网站/电话全方位服务，服务专家7*24h免费服务
+                        .col-md-4.services-grid
+                            .services-icon
+                                span.glyphicon.glyphicon-cog.glyphicon-check(aria-hidden='true')
+                            .services-grid-info
+                                h6 酒店
+                                p
+                                    | 200多个国家121万家酒店，确认订单后不涨价，有房保障，如遇无房全力协调，最高赔付首晚房费，122,000,000条真实点评，APP/网站/电话全方位服务，服务专家7*24h免费服务
+                        .col-md-4.services-grid
+                            .services-icon
+                                span.glyphicon.glyphicon-cog.glyphicon-globe(aria-hidden='true')
+                            .services-grid-info
+                                h6 酒店
+                                p
+                                    | 200多个国家121万家酒店，确认订单后不涨价，有房保障，如遇无房全力协调，最高赔付首晚房费，122,000,000条真实点评，APP/网站/电话全方位服务，服务专家7*24h免费服务
+                        .clearfix  
+
+        .main
+            .container
+                .main-info
+                    h4 Our Main Services
+                .main-grids
+                    .main-grids-top
+                        .col-md-6.main-grid-left
+                            .main-grid-left-left
+                                img(src='/public/images/10.jpg', alt='')
+                            .main-grid-left-right
+                                h6 旅游
+                                p
+                                    | 开放平台数万条旅游产品选择，全程一站式服务，六重旅游保障，专业领队贴心服务，APP/网站/电话全方位服务，预定专家7*24h应急援助
+
+                            .clearfix  
+                        .col-md-6.main-grid-right
+                            .main-grid-left-left
+                                img(src='/public/images/11.jpg', alt='')
+                            .main-grid-left-right
+                                h6 旅游
+                                p
+                                    | 开放平台数万条旅游产品选择，全程一站式服务，六重旅游保障，专业领队贴心服务，APP/网站/电话全方位服务，预定专家7*24h应急援助
+                            .clearfix  
+                        .clearfix  
+                    .main-grids-top
+                        .col-md-6.main-grid-left
+                            .main-grid-left-left
+                                img(src='/public/images/12.jpg', alt='')
+                            .main-grid-left-right
+                                h6 旅游
+                                p
+                                    | 开放平台数万条旅游产品选择，全程一站式服务，六重旅游保障，专业领队贴心服务，APP/网站/电话全方位服务，预定专家7*24h应急援助
+                            .clearfix  
+                        .col-md-6.main-grid-right
+                            .main-grid-left-left
+                                img(src='/public/images/13.jpg', alt='')
+                            .main-grid-left-right
+                                h6 旅游
+                                p
+                                    | 开放平台数万条旅游产品选择，全程一站式服务，六重旅游保障，专业领队贴心服务，APP/网站/电话全方位服务，预定专家7*24h应急援助
+                            .clearfix  
+                        .clearfix  
+
+    include lib/footer
+
+block script
+    script.

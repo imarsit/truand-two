@@ -1,0 +1,67 @@
+extends layout
+
+block vars
+    - let title = 'europe'
+
+block content
+    include lib/head
+    include lib/banner
+
+    .banner-bottom
+        .container
+            .banner-bottom-info
+                h3 和我们一起计划你的完美之旅
+                p
+                    | 这是一种很好的方法，它可以让你的生活变得更轻松，更能让你的生活变得更轻松，更能让你的生活变得更轻松。
+            .banner-bottom-grids
+                .col-md-6.banner-bottom-grid
+                    .col-md-5.banner-bottom-left
+                        img(src='/public/images/2.png', alt='')
+                    .col-md-7.banner-bottom-right
+                        h4 一起看没见过的美景
+                        p
+                            | 这是一种很好的方法，它可以让你的生活变得更轻松，更能让你的生活变得更轻松，更能让你的生活变得更轻松。
+                    .clearfix  
+                .col-md-6.banner-bottom-grid
+                    .col-md-5.banner-bottom-left
+                        img(src='/public/images/3.png', alt='')
+                    .col-md-7.banner-bottom-right
+                        h4 来一场浪漫的邂逅
+                        p
+                            | 这是一种很好的方法，它可以让你的生活变得更轻松，更能让你的生活变得更轻松，更能让你的生活变得更轻松。
+                    .clearfix  
+                .clearfix  
+
+    .destination
+        .container
+            .destination-info
+                h3 Top Destinations
+                p
+                    | 这是一种很好的方法，它可以让你的生活变得更轻松，更能让你的生活变得更轻松，更能让你的生活变得更轻松。
+            .destination-grids
+                .col-md-3.col-xs-12.destination-grid
+                    img(src='/public/images/4.jpg', alt='')
+                    p
+                        | 土耳其是一个横跨欧亚大陆的伊斯兰教国家，被称为"文明的摇篮"。穆斯塔法·凯末尔·阿塔土克于1923年10月29日建立了土耳其共和国。历史上的土耳其曾经是罗马帝国、拜占庭帝国、奥斯曼帝国的中心，有着6500年悠久历史和前后十三个不同文明的历史遗产，加上三面环海的地势和内陆复杂的地理环境使其拥有了极为丰富的旅游资源。
+                .col-md-3.col-xs-12.destination-grid
+                    img(src='/public/images/5.jpg', alt='')
+                    p
+                        | 从格林威治西上至泰晤士河第一座桥梁——塔桥，沿河两岸船坞、码头、仓库密集，过塔桥而西进入伦敦市区，两岸景色骤变，高楼广厦，皇宫苑圃，鳞次栉比；议会大厦，皇家音乐厅，伦敦塔和索思瓦克大教堂，圣保罗大教堂等古建筑都依稀可见。
+                .col-md-3.col-xs-12.destination-grid
+                    img(src='/public/images/6.jpg', alt='')
+                    p
+                        | 阿尔卑斯山脉是欧洲最大的山脉，同时也是是个巨大的分水岭，欧洲许多大河如多瑙河、莱茵河、波河、罗讷河等均发源于此。各河上游都具有典型山地河流特点，水流湍急，水力资源丰富。
+                .col-md-3.col-xs-12.destination-grid
+                    img(src='/public/images/7.jpg', alt='')
+                    p
+                        | 巨石阵（stonehenge)由巨大的石头组成，每块约重50吨。它的主轴线、通往石柱的古道和夏至日早晨初升的太阳，在同一条线上；另外，其中还有两块石头的连线指向冬至日落的方向。
+                .clearfix  
+
+
+    include lib/news
+    include lib/footer
+
+block script
+    script.
+
+

@@ -1,0 +1,419 @@
+extends layout
+
+block vars
+    - let title = 'about'
+
+block content
+    include lib/head
+    include lib/banner
+    .typography
+        .container
+            .typography-info
+                h3.type Typography
+            .grid_3.grid_44
+                h3 Headings
+                .bs-example
+                    table.table
+                        tbody
+                            tr
+                                td
+                                    h1(id='h1.-bootstrap-heading')
+                                        | h1. Bootstrap heading
+                                        a.anchorjs-link(href='#h1.-bootstrap-heading')
+                                            span.anchorjs-icon
+                                td.type-info Semibold 36px
+                            tr
+                                td
+                                    h2(id='h2.-bootstrap-heading')
+                                        | h2. Bootstrap heading
+                                        a.anchorjs-link(href='#h2.-bootstrap-heading')
+                                            span.anchorjs-icon
+                                td.type-info Semibold 30px
+                            tr
+                                td
+                                    h3(id='h3.-bootstrap-heading')
+                                        | h3. Bootstrap heading
+                                        a.anchorjs-link(href='#h3.-bootstrap-heading')
+                                            span.anchorjs-icon
+                                td.type-info Semibold 24px
+                            tr
+                                td
+                                    h4(id='h4.-bootstrap-heading')
+                                        | h4. Bootstrap heading
+                                        a.anchorjs-link(href='#h4.-bootstrap-heading')
+                                            span.anchorjs-icon
+                                td.type-info Semibold 18px
+                            tr
+                                td
+                                    h5(id='h5.-bootstrap-heading')
+                                        | h5. Bootstrap heading
+                                        a.anchorjs-link(href='#h5.-bootstrap-heading')
+                                            span.anchorjs-icon
+                                td.type-info Semibold 14px
+                            tr
+                                td
+                                    h6 h6. Bootstrap heading
+                                td.type-info Semibold 12px
+            .grid_3.grid_5
+                h3 Buttons
+                h1.btns
+                    a(href='#')
+                        span.label.label-default Default
+                    a(href='#')
+                        span.label.label-primary Primary
+                    a(href='#')
+                        span.label.label-success Success
+                    a(href='#')
+                        span.label.label-info Info
+                    a(href='#')
+                        span.label.label-warning Warning
+                    a(href='#')
+                        span.label.label-danger Danger
+                h2.btns
+                    a(href='#')
+                        span.label.label-default Default
+                    a(href='#')
+                        span.label.label-primary Primary
+                    a(href='#')
+                        span.label.label-success Success
+                    a(href='#')
+                        span.label.label-info Info
+                    a(href='#')
+                        span.label.label-warning Warning
+                    a(href='#')
+                        span.label.label-danger Danger
+                h3
+                    a(href='#')
+                        span.label.label-default Default
+                    a(href='#')
+                        span.label.label-primary Primary
+                    a(href='#')
+                        span.label.label-success Success
+                    a(href='#')
+                        span.label.label-info Info
+                    a(href='#')
+                        span.label.label-warning Warning
+                    a(href='#')
+                        span.label.label-danger Danger
+                h4.typ1
+                    a(href='#')
+                        span.label.label-default Default
+                    a(href='#')
+                        span.label.label-primary Primary
+                    a(href='#')
+                        span.label.label-success Success
+                    a(href='#')
+                        span.label.label-info Info
+                    a(href='#')
+                        span.label.label-warning Warning
+                    a(href='#')
+                        span.label.label-danger Danger
+                h5.typ1
+                    a(href='#')
+                        span.label.label-default Default
+                    a(href='#')
+                        span.label.label-primary Primary
+                    a(href='#')
+                        span.label.label-success Success
+                    a(href='#')
+                        span.label.label-info Info
+                    a(href='#')
+                        span.label.label-warning Warning
+                    a(href='#')
+                        span.label.label-danger Danger
+                h6.typ1
+                    a(href='#')
+                        span.label.label-default Default
+                    a(href='#')
+                        span.label.label-primary Primary
+                    a(href='#')
+                        span.label.label-success Success
+                    a(href='#')
+                        span.label.label-info Info
+                    a(href='#')
+                        span.label.label-warning Warning
+                    a(href='#')
+                        span.label.label-danger Danger
+            .grid_3.grid_5
+                h3 Progress Bars
+                .tab-content
+                    #domprogress.tab-pane.active
+                        .progress
+                            .progress-bar.progress-bar-primary(style='width: 20%')
+                        p
+                            | Info with 
+                            code progress-bar-info
+                            |  class.
+                        .progress
+                            .progress-bar.progress-bar-info(style='width: 60%')
+                        p
+                            | Success with 
+                            code progress-bar-success
+                            |  class.
+                        .progress
+                            .progress-bar.progress-bar-success(style='width: 30%')
+                        p
+                            | Warning with 
+                            code progress-bar-warning
+                            |  class.
+                        .progress
+                            .progress-bar.progress-bar-warning(style='width: 70%')
+                        p
+                            | Danger with 
+                            code progress-bar-danger
+                            |  class.
+                        .progress
+                            .progress-bar.progress-bar-danger(style='width: 50%')
+                        p
+                            | Inverse with 
+                            code progress-bar-inverse
+                            |  class.
+                        .progress
+                            .progress-bar.progress-bar-inverse(style='width: 40%')
+                        p
+                            | Inverse with 
+                            code progress-bar-inverse
+                            |  class.
+                        .progress
+                            .progress-bar.progress-bar-success(style='width: 35%')
+                                span.sr-only 35% Complete (success)
+                            .progress-bar.progress-bar-warning(style='width: 20%')
+                                span.sr-only 20% Complete (warning)
+                            .progress-bar.progress-bar-danger(style='width: 10%')
+                                span.sr-only 10% Complete (danger)
+            .grid_3.grid_5
+                h3 Pagination
+                .col-md-6
+                    nav
+                        ul.pagination.pagination-lg
+                            li
+                                a(href='#', aria-label='Previous')
+                                    span(aria-hidden='true') «
+                            li
+                                a(href='#') 1
+                            li
+                                a(href='#') 2
+                            li
+                                a(href='#') 3
+                            li
+                                a(href='#') 4
+                            li
+                                a(href='#') 5
+                            li
+                                a(href='#', aria-label='Next')
+                                    span(aria-hidden='true') »
+                    nav
+                        ul.pagination
+                            li
+                                a(href='#', aria-label='Previous')
+                                    span(aria-hidden='true') «
+                            li
+                                a(href='#') 1
+                            li
+                                a(href='#') 2
+                            li
+                                a(href='#') 3
+                            li
+                                a(href='#') 4
+                            li
+                                a(href='#') 5
+                            li
+                                a(href='#', aria-label='Next')
+                                    span(aria-hidden='true') »
+                    nav
+                        ul.pagination.pagination-sm
+                            li
+                                a(href='#', aria-label='Previous')
+                                    span(aria-hidden='true') «
+                            li
+                                a(href='#') 1
+                            li
+                                a(href='#') 2
+                            li
+                                a(href='#') 3
+                            li
+                                a(href='#') 4
+                            li
+                                a(href='#') 5
+                            li
+                                a(href='#', aria-label='Next')
+                                    span(aria-hidden='true') »
+                .col-md-6
+                    ul.pagination.pagination-lg
+                        li.disabled
+                            a(href='#')
+                                span(aria-hidden='true') «
+                        li.active
+                            a(href='#') 1
+                        li
+                            a(href='#') 2
+                        li
+                            a(href='#') 3
+                        li
+                            a(href='#') 4
+                        li
+                            a(href='#') 5
+                        li
+                            a(href='#', aria-label='Next')
+                                span(aria-hidden='true') »
+                    nav
+                        ul.pagination
+                            li.disabled
+                                a(href='#', aria-label='Previous')
+                                    span(aria-hidden='true') «
+                            li.active
+                                a(href='#')
+                                    | 1 
+                                    span.sr-only (current)
+                            li
+                                a(href='#') 2
+                            li
+                                a(href='#') 3
+                            li
+                                a(href='#') 4
+                            li
+                                a(href='#') 5
+                            li
+                                a(href='#', aria-label='Next')
+                                    span(aria-hidden='true') »
+                    ul.pagination.pagination-sm
+                        li.disabled
+                            a(href='#')
+                                span(aria-hidden='true') «
+                        li.active
+                            a(href='#') 1
+                        li
+                            a(href='#') 2
+                        li
+                            a(href='#') 3
+                        li
+                            a(href='#') 4
+                        li
+                            a(href='#') 5
+                        li
+                            a(href='#', aria-label='Next')
+                                span(aria-hidden='true') »
+                .clearfix  
+            .grid_3.grid_5
+                h3 Breadcrumbs
+                ol.breadcrumb
+                    li.active Home
+                ol.breadcrumb
+                    li
+                        a(href='#') Home
+                    li.active Library
+                ol.breadcrumb
+                    li
+                        a(href='#') Home
+                    li
+                        a(href='#') Library
+                    li.active Data
+            .grid_3.grid_5
+                h3 Badges
+                .col-md-6
+                    p Add modifier classes to change the appearance of a badge.
+                    table.table.table-bordered
+                        thead
+                            tr
+                                th(width='50%') Classes
+                                th(width='50%') Badges
+                        tbody
+                            tr
+                                td No modifiers
+                                td
+                                    span.badge 42
+                            tr
+                                td
+                                    code .badge-primary
+                                td
+                                    span.badge.badge-primary 1
+                            tr
+                                td
+                                    code .badge-success
+                                td
+                                    span.badge.badge-success 22
+                            tr
+                                td
+                                    code .badge-info
+                                td
+                                    span.badge.badge-info 30
+                            tr
+                                td
+                                    code .badge-warning
+                                td
+                                    span.badge.badge-warning 412
+                            tr
+                                td
+                                    code .badge-danger
+                                td
+                                    span.badge.badge-danger 999
+                .col-md-6
+                    p
+                        | Easily highlight new or unread items with the 
+                        code .badge
+                        |  class
+                    .list-group.list-group-alternate
+                        a.list-group-item(href='#')
+                            span.badge 201
+                            i.ti.ti-email
+                            |  Inbox
+                        a.list-group-item(href='#')
+                            span.badge.badge-primary 5021
+                            i.ti.ti-eye
+                            |  Profile visits
+                        a.list-group-item(href='#')
+                            span.badge 14
+                            i.ti.ti-headphone-alt
+                            |  Call
+                        a.list-group-item(href='#')
+                            span.badge 20
+                            i.ti.ti-comments
+                            |  Messages
+                        a.list-group-item(href='#')
+                            span.badge.badge-warning 14
+                            i.ti.ti-bookmark
+                            |  Bookmarks
+                        a.list-group-item(href='#')
+                            span.badge.badge-danger 30
+                            i.ti.ti-bell
+                            |  Notifications
+                .clearfix  
+            section#tables
+                .page-header
+                    h1 Tables
+                h2 Default styles
+                p
+                    | For basic stylinglight padding and only horizontal add the base class 
+                    code .table
+                    |  to any 
+                    code <table>
+                    | .
+                .bs-docs-example
+                    table.table
+                        thead
+                            tr
+                                th #
+                                th First Name
+                                th Last Name
+                                th Username
+                        tbody
+                            tr
+                                td 1
+                                td Mark
+                                td Otto
+                                td @mdo
+                            tr
+                                td 2
+                                td Jacob
+                                td Thornton
+                                td @fat
+                            tr
+                                td 3
+                                td Larry
+                                td the Bird
+                                td @twitter
+                hr.bs-docs-separator
+    include lib/footer
+
+block script
+    script.
